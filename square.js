@@ -74,3 +74,25 @@ let server={
 }
 
  server['Starting up']();
+
+ let colors=['Red',"Green","Blue"];
+console.log(colors.entries());
+
+ for(const[index,color] of colors.entries()){
+      console.log(`${color} is at index ${index}`)
+ }
+
+
+ const ratings = [
+     {user: 'John',score: 3},
+     {user: 'Jane',score: 4},
+     {user: 'David',score: 5},
+     {user: 'Peter',score: 2},
+ ];
+ 
+ let Sum = 0;
+ for (const {score} of ratings) {
+     Sum += score;
+ }
+ 
+ console.log(`Total scores: ${Sum}`); //
